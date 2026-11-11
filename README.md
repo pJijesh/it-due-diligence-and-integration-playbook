@@ -1,5 +1,7 @@
 # it-due-diligence-and-integration-playbook
 
+![it-due-diligence-and-integration-playbook: project banner](docs/images/banner.png)
+
 [![Tests](https://github.com/pJijesh/it-due-diligence-and-integration-playbook/actions/workflows/test.yml/badge.svg)](https://github.com/pJijesh/it-due-diligence-and-integration-playbook/actions/workflows/test.yml) [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
 
 **Problem:** deal teams have days, not months, to judge a target's IT, and the findings often reach the price discussion late, as opinions without numbers, while the integration that follows starts from a blank page.
