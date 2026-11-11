@@ -1,0 +1,414 @@
+{
+  "tool_version": "1.0.0",
+  "target": "Brightwater Fixings Ltd",
+  "acquirer": "Larkfield Components Group",
+  "inputs": {
+    "assessment_file": "brightwater-assessment.csv",
+    "assessment_sha256": "99a4bad9b1cf69cdd387f12066656e0be9d83a58a29714306ec14a734642a46e",
+    "bank_sha256": "d6415338b82a9b8849bbc4c282a0826e2afb867dfa562a7c5783cf25c01352c1"
+  },
+  "overall": {
+    "score": 53.4,
+    "rag": "AMBER",
+    "questions_in_bank": 104,
+    "questions_answered": 101,
+    "coverage_pct": 98.3,
+    "red_flags": 15,
+    "critical_red_flags": 7,
+    "answers_without_evidence": 7
+  },
+  "domains": [
+    {
+      "domain": "Governance and strategy",
+      "questions": 10,
+      "answered": 10,
+      "coverage_pct": 100.0,
+      "score": 53.0,
+      "rag": "AMBER",
+      "red_flags": 2,
+      "critical_red_flags": 0
+    },
+    {
+      "domain": "Infrastructure and cloud",
+      "questions": 10,
+      "answered": 10,
+      "coverage_pct": 100.0,
+      "score": 58.3,
+      "rag": "AMBER",
+      "red_flags": 1,
+      "critical_red_flags": 0
+    },
+    {
+      "domain": "Applications and ERP",
+      "questions": 10,
+      "answered": 10,
+      "coverage_pct": 100.0,
+      "score": 46.1,
+      "rag": "RED",
+      "red_flags": 3,
+      "critical_red_flags": 1
+    },
+    {
+      "domain": "Data and data protection",
+      "questions": 10,
+      "answered": 9,
+      "coverage_pct": 90.6,
+      "score": 58.6,
+      "rag": "AMBER",
+      "red_flags": 0,
+      "critical_red_flags": 0
+    },
+    {
+      "domain": "Cyber security",
+      "questions": 12,
+      "answered": 12,
+      "coverage_pct": 100.0,
+      "score": 35.6,
+      "rag": "RED",
+      "red_flags": 3,
+      "critical_red_flags": 2
+    },
+    {
+      "domain": "People and skills",
+      "questions": 10,
+      "answered": 9,
+      "coverage_pct": 93.1,
+      "score": 55.6,
+      "rag": "AMBER",
+      "red_flags": 1,
+      "critical_red_flags": 1
+    },
+    {
+      "domain": "Suppliers, contracts and licences",
+      "questions": 10,
+      "answered": 10,
+      "coverage_pct": 100.0,
+      "score": 58.1,
+      "rag": "AMBER",
+      "red_flags": 2,
+      "critical_red_flags": 1
+    },
+    {
+      "domain": "IT spend",
+      "questions": 10,
+      "answered": 9,
+      "coverage_pct": 97.0,
+      "score": 71.1,
+      "rag": "GREEN",
+      "red_flags": 0,
+      "critical_red_flags": 0
+    },
+    {
+      "domain": "Service management and continuity",
+      "questions": 10,
+      "answered": 10,
+      "coverage_pct": 100.0,
+      "score": 47.1,
+      "rag": "RED",
+      "red_flags": 2,
+      "critical_red_flags": 1
+    },
+    {
+      "domain": "Integration readiness",
+      "questions": 12,
+      "answered": 12,
+      "coverage_pct": 100.0,
+      "score": 57.1,
+      "rag": "AMBER",
+      "red_flags": 1,
+      "critical_red_flags": 1
+    }
+  ],
+  "red_flags": [
+    {
+      "id": "SEC-01",
+      "domain": "Cyber security",
+      "severity": "Critical",
+      "weight": 5,
+      "answer_score": 0,
+      "effective_score": 0,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 5) with a low score (0)",
+        "scored 0, so the red-flag condition applies",
+        "assessor marked the red-flag condition as observed"
+      ],
+      "question": "Is multi-factor authentication enforced for remote access, email and every administrator account?",
+      "red_flag_if": "No MFA on remote access, email or administrator accounts.",
+      "notes": "No MFA on remote desktop gateway, email for 60 staff, or administrator accounts. Confirmed from the identity settings export."
+    },
+    {
+      "id": "APP-02",
+      "domain": "Applications and ERP",
+      "severity": "Critical",
+      "weight": 5,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 5) with a low score (1)"
+      ],
+      "question": "Is the core ERP or finance system within vendor support, with a known version, module list, user count and funded upgrade plan?",
+      "red_flag_if": "The ERP is out of vendor support or support ends within 18 months with no funded upgrade.",
+      "notes": "ERP in use for 11 years. Vendor support ends in 14 months and no upgrade or replacement is funded."
+    },
+    {
+      "id": "INT-07",
+      "domain": "Integration readiness",
+      "severity": "Critical",
+      "weight": 5,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 5) with a low score (1)"
+      ],
+      "question": "How does the target's security compare with the buyer's minimum standard, and is the cost of closing the gaps before connection known?",
+      "red_flag_if": "The target is below the buyer's baseline on MFA, patching or endpoint protection and the buyer intends to connect before fixing it.",
+      "notes": "Target is below the acquirer's baseline on MFA, patching, endpoint management and logging. Gap list drafted, not costed."
+    },
+    {
+      "id": "PPL-02",
+      "domain": "People and skills",
+      "severity": "Critical",
+      "weight": 5,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 5) with a low score (1)"
+      ],
+      "question": "Is knowledge of core systems and administrator access shared across more than one person, with written documentation?",
+      "red_flag_if": "One person holds undocumented administrator knowledge or credentials for core systems and there is no cover.",
+      "notes": "The IT lead alone knows the ERP customisations, firewall configuration and backup set-up. Credentials in a notebook and a personal password manager."
+    },
+    {
+      "id": "SEC-03",
+      "domain": "Cyber security",
+      "severity": "Critical",
+      "weight": 5,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 5) with a low score (1)"
+      ],
+      "question": "Are security patches applied promptly to internet-facing systems and endpoints, with evidence of timing?",
+      "red_flag_if": "Internet-facing systems have critical patches outstanding for more than 30 days or known exploited flaws.",
+      "notes": "Patch report shows 22 devices and the firewall with critical updates more than 60 days old."
+    },
+    {
+      "id": "SUP-02",
+      "domain": "Suppliers, contracts and licences",
+      "severity": "Critical",
+      "weight": 5,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 5) with a low score (1)"
+      ],
+      "question": "Have IT contracts been checked for change of control, assignment and termination terms that the transaction could trigger?",
+      "red_flag_if": "Key contracts terminate, reprice or need consent on a change of control.",
+      "notes": "ERP support and licence agreement requires vendor consent on a change of control and allows repricing. Legal diligence to confirm wording."
+    },
+    {
+      "id": "SVC-04",
+      "domain": "Service management and continuity",
+      "severity": "Critical",
+      "weight": 5,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 5) with a low score (1)"
+      ],
+      "question": "Are all critical systems and SaaS data backed up to a separate location, and has a full restore been tested in the last 12 months?",
+      "red_flag_if": "No restore test has been done, backups sit on the same network as production, or backup status is unknown.",
+      "notes": "Daily backups go to a device in the same server room. No restore test has been done. Cloud copy covers email only."
+    },
+    {
+      "id": "APP-03",
+      "domain": "Applications and ERP",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 4) with a low score (1)"
+      ],
+      "question": "Is customisation of the ERP limited, documented, in source control and maintained by more than one person?",
+      "red_flag_if": "Extensive bespoke code exists with no documentation or source control and one person who understands it.",
+      "notes": "Around 140 custom reports and 12 custom modules. A single former contractor wrote most of them. No source control."
+    },
+    {
+      "id": "APP-10",
+      "domain": "Applications and ERP",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 4) with a low score (1)"
+      ],
+      "question": "Are production, warehouse and machine-connected systems supported by a known party and separated from the office network?",
+      "red_flag_if": "Operational systems share the office network and run unsupported software that cannot be patched.",
+      "notes": "Warehouse scanners and one machine controller sit on the office network and run unsupported software."
+    },
+    {
+      "id": "GOV-05",
+      "domain": "Governance and strategy",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 4) with a low score (1)"
+      ],
+      "question": "Has the target avoided deferring IT spend (renewals, upgrades, hires) ahead of the sale?",
+      "red_flag_if": "A material catch-up cost exists that is not in the forecast or the price discussion.",
+      "notes": "Server refresh and ERP upgrade were each postponed twice. No IT capital spend approved for three years."
+    },
+    {
+      "id": "GOV-07",
+      "domain": "Governance and strategy",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 4) with a low score (1)"
+      ],
+      "question": "Does the target meet the IT requirements set by its regulators and major customers (audit rights, certifications, security questionnaires)?",
+      "red_flag_if": "A key customer contract requires a certification or control that the target does not hold or has let lapse.",
+      "notes": "Two largest customers require a current Cyber Essentials certificate. Certificate lapsed 8 months ago and renewal has not started."
+    },
+    {
+      "id": "INF-04",
+      "domain": "Infrastructure and cloud",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 4) with a low score (1)"
+      ],
+      "question": "Are cloud, hosting and domain accounts registered to the company, with named administrators and more than one recovery route?",
+      "red_flag_if": "Cloud, hosting or domain accounts are registered to an individual, a personal email address or a former supplier.",
+      "notes": "Main company domain and the website hosting account are registered to the founder personally."
+    },
+    {
+      "id": "SUP-10",
+      "domain": "Suppliers, contracts and licences",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 4) with a low score (1)"
+      ],
+      "question": "Are any IT services supplied by related parties (former owners, directors' companies) under written commercial terms at market prices?",
+      "red_flag_if": "IT services are supplied by a seller-related party with no contract or at off-market prices.",
+      "notes": "Telephony and website hosting supplied by a company owned by the seller's family. No contract and no price list."
+    },
+    {
+      "id": "SVC-07",
+      "domain": "Service management and continuity",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 1,
+      "effective_score": 1,
+      "evidence_seen": true,
+      "triggers": [
+        "high-weight item (weight 4) with a low score (1)"
+      ],
+      "question": "Is system documentation current (diagrams, procedures, runbooks) with privileged credentials held in a managed vault?",
+      "red_flag_if": "Privileged passwords exist only in one person's head or personal notes and there is no documentation.",
+      "notes": "Few diagrams and no runbooks. Privileged credentials are in the IT lead's notebook."
+    },
+    {
+      "id": "SEC-11",
+      "domain": "Cyber security",
+      "severity": "High",
+      "weight": 4,
+      "answer_score": 2,
+      "effective_score": 2,
+      "evidence_seen": true,
+      "triggers": [
+        "assessor marked the red-flag condition as observed"
+      ],
+      "question": "Are leavers' accounts and access removed promptly, and are dormant, service and shared accounts reviewed?",
+      "red_flag_if": "Accounts of people who left months ago are still active and there is no review process.",
+      "notes": "No formal process. 9 accounts of leavers from the last year were still active at the time of review."
+    }
+  ],
+  "unevidenced_high_weight": [
+    {
+      "id": "APP-08",
+      "domain": "Applications and ERP",
+      "weight": 4,
+      "answer_score": 2,
+      "effective_score": 2,
+      "question": "Can every business-critical application be rebuilt or restored, with known installation steps and supported versions?",
+      "evidence_to_request": "Runbooks, installation media and licences, restore test records, vendor support status for each critical application."
+    },
+    {
+      "id": "PPL-03",
+      "domain": "People and skills",
+      "weight": 4,
+      "answer_score": 2,
+      "effective_score": 2,
+      "question": "Are key IT staff likely to stay through integration, with retention arrangements where needed?",
+      "evidence_to_request": "Retention or notice terms for key roles, summary of conversations with management (HR and legal lead the detail)."
+    },
+    {
+      "id": "SEC-02",
+      "domain": "Cyber security",
+      "weight": 4,
+      "answer_score": 3,
+      "effective_score": 2,
+      "question": "Do all servers and endpoints run managed protection with central visibility and someone watching alerts?",
+      "evidence_to_request": "Console screenshots or exports showing coverage, alert handling records, monitoring service contract."
+    },
+    {
+      "id": "SVC-05",
+      "domain": "Service management and continuity",
+      "weight": 4,
+      "answer_score": 2,
+      "effective_score": 2,
+      "question": "Are recovery time and recovery point objectives agreed with the business for critical systems, and are they achievable with the current design?",
+      "evidence_to_request": "Business impact analysis, objectives list, recovery test results against objectives."
+    },
+    {
+      "id": "SVC-06",
+      "domain": "Service management and continuity",
+      "weight": 4,
+      "answer_score": 3,
+      "effective_score": 2,
+      "question": "Is there a disaster recovery and business continuity plan that has been exercised for core systems?",
+      "evidence_to_request": "Plan documents, last exercise report, actions arising, supplier recovery commitments."
+    }
+  ],
+  "not_in_assessment_file": [],
+  "settings": {
+    "rag": {
+      "green_min": 70,
+      "amber_min": 50
+    },
+    "min_coverage": 0.6,
+    "unevidenced_score_cap": 2,
+    "red_flags": {
+      "high_weight": 4,
+      "low_score": 1,
+      "zero_score_min_weight": 3
+    },
+    "critical_weight": 5,
+    "cap_green_on_critical_flag": true
+  }
+}

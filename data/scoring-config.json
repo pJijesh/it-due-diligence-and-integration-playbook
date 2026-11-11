@@ -1,0 +1,15 @@
+{
+  "rag": {
+    "green_min": 70,
+    "amber_min": 50
+  },
+  "min_coverage": 0.6,
+  "unevidenced_score_cap": 2,
+  "red_flags": {
+    "high_weight": 4,
+    "low_score": 1,
+    "zero_score_min_weight": 3
+  },
+  "critical_weight": 5,
+  "cap_green_on_critical_flag": true
+}

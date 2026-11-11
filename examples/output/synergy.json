@@ -1,0 +1,251 @@
+{
+  "tool_version": "1.0.0",
+  "title": "Larkfield Components Group and Brightwater Fixings Ltd: synergy and cost summary",
+  "inputs": {
+    "synergy_file": "brightwater-synergy.csv",
+    "synergy_sha256": "1b24456361588e7cad560bef1edf49b4ca332a43e7704422a4a5b8bb8e3eff3b"
+  },
+  "items": [
+    {
+      "item": "Server and firewall refresh at both sites",
+      "type": "one-off",
+      "amount": 150000.0,
+      "year": 1,
+      "confidence": "high"
+    },
+    {
+      "item": "Security remediation: MFA and endpoint management and logging",
+      "type": "one-off",
+      "amount": 60000.0,
+      "year": 1,
+      "confidence": "high"
+    },
+    {
+      "item": "Cyber Essentials renewal and independent penetration test",
+      "type": "one-off",
+      "amount": 15000.0,
+      "year": 1,
+      "confidence": "high"
+    },
+    {
+      "item": "Network renumbering and site connection",
+      "type": "one-off",
+      "amount": 30000.0,
+      "year": 1,
+      "confidence": "high"
+    },
+    {
+      "item": "Telephony move to acquirer platform",
+      "type": "one-off",
+      "amount": 25000.0,
+      "year": 1,
+      "confidence": "high"
+    },
+    {
+      "item": "Domain transfer and email tenant migration",
+      "type": "one-off",
+      "amount": 45000.0,
+      "year": 1,
+      "confidence": "medium"
+    },
+    {
+      "item": "Retention and backfill for the IT lead and cover contractor",
+      "type": "one-off",
+      "amount": 60000.0,
+      "year": 1,
+      "confidence": "medium"
+    },
+    {
+      "item": "Integration programme management and external support",
+      "type": "one-off",
+      "amount": 90000.0,
+      "year": 1,
+      "confidence": "medium"
+    },
+    {
+      "item": "Bridging support for the target ERP until migration",
+      "type": "one-off",
+      "amount": 45000.0,
+      "year": 2,
+      "confidence": "medium"
+    },
+    {
+      "item": "Finance consolidation onto the acquirer finance system",
+      "type": "one-off",
+      "amount": 260000.0,
+      "year": 2,
+      "confidence": "low"
+    },
+    {
+      "item": "Early termination of overlapping contracts",
+      "type": "one-off",
+      "amount": 35000.0,
+      "year": 2,
+      "confidence": "low"
+    },
+    {
+      "item": "Productivity licences moved to the acquirer agreement",
+      "type": "run-rate",
+      "amount": 22000.0,
+      "year": 1,
+      "confidence": "medium"
+    },
+    {
+      "item": "Endpoint protection and monitoring combined",
+      "type": "run-rate",
+      "amount": 8000.0,
+      "year": 1,
+      "confidence": "high"
+    },
+    {
+      "item": "Telephony platform retired",
+      "type": "run-rate",
+      "amount": 12000.0,
+      "year": 2,
+      "confidence": "medium"
+    },
+    {
+      "item": "Managed network service consolidated",
+      "type": "run-rate",
+      "amount": 20000.0,
+      "year": 2,
+      "confidence": "medium"
+    },
+    {
+      "item": "Supplier rates renegotiated on the combined volume",
+      "type": "run-rate",
+      "amount": 10000.0,
+      "year": 2,
+      "confidence": "low"
+    },
+    {
+      "item": "Target ERP licence and support retired after migration",
+      "type": "run-rate",
+      "amount": 55000.0,
+      "year": 3,
+      "confidence": "low"
+    },
+    {
+      "item": "Acquirer security tooling and monitoring for target users",
+      "type": "run-rate",
+      "amount": -28000.0,
+      "year": 1,
+      "confidence": "high"
+    },
+    {
+      "item": "Extra service desk capacity for target users",
+      "type": "run-rate",
+      "amount": -40000.0,
+      "year": 1,
+      "confidence": "medium"
+    }
+  ],
+  "assumptions": {
+    "savings_factor": {
+      "high": 0.9,
+      "medium": 0.6,
+      "low": 0.3
+    },
+    "cost_uplift": {
+      "high": 1.0,
+      "medium": 1.15,
+      "low": 1.3
+    },
+    "savings_start_month": 7
+  },
+  "nominal": {
+    "one_off_costs_total": 815000.0,
+    "run_rate_savings_total": 59000.0,
+    "three_year_net": -819500.0,
+    "payback": {
+      "month": null,
+      "status": "not within 36 months"
+    },
+    "years": [
+      {
+        "year": 1,
+        "one_off_costs": 475000.0,
+        "savings_realised": -19000.0,
+        "net": -494000.0,
+        "cumulative_net": -494000.0
+      },
+      {
+        "year": 2,
+        "one_off_costs": 340000.0,
+        "savings_realised": -17000.0,
+        "net": -357000.0,
+        "cumulative_net": -851000.0
+      },
+      {
+        "year": 3,
+        "one_off_costs": 0.0,
+        "savings_realised": 31500.0,
+        "net": 31500.0,
+        "cumulative_net": -819500.0
+      }
+    ]
+  },
+  "risk_adjusted": {
+    "one_off_costs_total": 939500.0,
+    "run_rate_savings_total": -14900.0,
+    "three_year_net": -1031950.0,
+    "payback": {
+      "month": null,
+      "status": "not within 36 months"
+    },
+    "years": [
+      {
+        "year": 1,
+        "one_off_costs": 504250.0,
+        "savings_realised": -26800.0,
+        "net": -531050.0,
+        "cumulative_net": -531050.0
+      },
+      {
+        "year": 2,
+        "one_off_costs": 435250.0,
+        "savings_realised": -42500.0,
+        "net": -477750.0,
+        "cumulative_net": -1008800.0
+      },
+      {
+        "year": 3,
+        "one_off_costs": 0.0,
+        "savings_realised": -23150.0,
+        "net": -23150.0,
+        "cumulative_net": -1031950.0
+      }
+    ]
+  },
+  "by_confidence": [
+    {
+      "confidence": "high",
+      "items": 7,
+      "one_off_costs": 280000.0,
+      "run_rate_savings": -20000.0,
+      "risk_adjusted_one_off_costs": 280000.0,
+      "risk_adjusted_run_rate_savings": -20800.0
+    },
+    {
+      "confidence": "medium",
+      "items": 8,
+      "one_off_costs": 240000.0,
+      "run_rate_savings": 14000.0,
+      "risk_adjusted_one_off_costs": 276000.0,
+      "risk_adjusted_run_rate_savings": -13600.0
+    },
+    {
+      "confidence": "low",
+      "items": 4,
+      "one_off_costs": 295000.0,
+      "run_rate_savings": 65000.0,
+      "risk_adjusted_one_off_costs": 383500.0,
+      "risk_adjusted_run_rate_savings": 19500.0
+    }
+  ],
+  "low_confidence_share_of_run_rate_pct": 51.2,
+  "observations": [
+    "Risk adjustment removes all of the net run-rate savings (they turn negative) and adds 15% to one-off costs.",
+    "51% of positive run-rate savings are rated low confidence: treat the headline savings as a range, not a point."
+  ]
+}

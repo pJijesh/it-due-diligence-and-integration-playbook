@@ -1,0 +1,20 @@
+item,type,amount,year,confidence
+Server and firewall refresh at both sites,one-off,150000,1,high
+Security remediation: MFA and endpoint management and logging,one-off,60000,1,high
+Cyber Essentials renewal and independent penetration test,one-off,15000,1,high
+Network renumbering and site connection,one-off,30000,1,high
+Telephony move to acquirer platform,one-off,25000,1,high
+Domain transfer and email tenant migration,one-off,45000,1,medium
+Retention and backfill for the IT lead and cover contractor,one-off,60000,1,medium
+Integration programme management and external support,one-off,90000,1,medium
+Bridging support for the target ERP until migration,one-off,45000,2,medium
+Finance consolidation onto the acquirer finance system,one-off,260000,2,low
+Early termination of overlapping contracts,one-off,35000,2,low
+Productivity licences moved to the acquirer agreement,run-rate,22000,1,medium
+Endpoint protection and monitoring combined,run-rate,8000,1,high
+Telephony platform retired,run-rate,12000,2,medium
+Managed network service consolidated,run-rate,20000,2,medium
+Supplier rates renegotiated on the combined volume,run-rate,10000,2,low
+Target ERP licence and support retired after migration,run-rate,55000,3,low
+Acquirer security tooling and monitoring for target users,run-rate,-28000,1,high
+Extra service desk capacity for target users,run-rate,-40000,1,medium

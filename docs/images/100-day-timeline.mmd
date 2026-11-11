@@ -1,0 +1,34 @@
+flowchart TB
+    subgraph P0["Pre-close (day -30 to -2)"]
+        direction LR
+        a1["Name integration lead"] --> a2["Risk and cost log"]
+        a2 --> a3["Security conditions for connection"]
+        a2 --> a4["Day 1 requirements list"]
+        a4 --> a5["Day 1 readiness check"]
+    end
+    subgraph P1["Day 1"]
+        direction LR
+        b1["Take control of admin credentials"] --> b2["MFA on admin and remote access"]
+        b1 --> b3["Backups copied off site"]
+        b4["Freeze non-essential change"]
+    end
+    subgraph P2["Days 2 to 30"]
+        direction LR
+        c1["Patch and close exposures"] --> c2["Endpoint protection everywhere"]
+        c3["MFA for all users"]
+        c4["Restore test of the core system"]
+        c5["Inventory complete"]
+    end
+    subgraph P3["Days 31 to 60"]
+        direction LR
+        d1["Plan network link"] --> d2["Controlled network link"]
+        d3["Identity design"] --> d4["Identity pilot"]
+        d5["ERP options paper"]
+    end
+    subgraph P4["Days 61 to 100"]
+        direction LR
+        e1["ERP decision and funding"] --> e2["Migration plan"]
+        e1 --> e5["Handover and 12 month roadmap"]
+        e3["Identity to all staff"] --> e4["Email and files to group tenant"]
+    end
+    P0 --> P1 --> P2 --> P3 --> P4

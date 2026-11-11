@@ -1,0 +1,69 @@
+phase,workstream,task,owner_role,dependency,day_target
+Pre-close,Governance and PMO,Name the integration lead and steering group,Acquirer IT lead,None,-30
+Pre-close,Governance and PMO,Turn diligence findings into a risk and cost log,Integration lead,Name the integration lead and steering group,-25
+Pre-close,Suppliers and licences,List contracts and licences that need consent on completion,Procurement lead,Turn diligence findings into a risk and cost log,-25
+Pre-close,Finance and cost,Agree the one-off budget and approval route,Finance lead,Turn diligence findings into a risk and cost log,-20
+Pre-close,Security,Agree minimum security conditions for connecting the target,Security lead,Turn diligence findings into a risk and cost log,-20
+Pre-close,People and communication,Agree retention approach for key IT staff with HR and legal,HR lead,Turn diligence findings into a risk and cost log,-20
+Pre-close,Governance and PMO,Check the completion date avoids payroll cut-off and year end,Integration lead,Name the integration lead and steering group,-18
+Pre-close,Service and continuity,Agree a restore test of the core system before or just after completion,Service desk lead,Turn diligence findings into a risk and cost log,-15
+Pre-close,Suppliers and licences,Agree the transitional services schedule and exit dates,Procurement lead,List contracts and licences that need consent on completion,-12
+Pre-close,Governance and PMO,Confirm the Day 1 requirements list with the target,Integration lead,Turn diligence findings into a risk and cost log,-10
+Pre-close,People and communication,Draft Day 1 messages for staff and customers and suppliers,Communications lead,Confirm the Day 1 requirements list with the target,-8
+Pre-close,Identity and access,Agree who holds administrator credentials at completion,Acquirer IT lead,Name the integration lead and steering group,-8
+Pre-close,Security,Set up break-glass access to the target core systems,Security lead,Agree who holds administrator credentials at completion,-3
+Pre-close,Governance and PMO,Run a Day 1 readiness check,Integration lead,Confirm the Day 1 requirements list with the target,-2
+Day 1,Service and continuity,Confirm payroll and orders and banking and email work,Service desk lead,Run a Day 1 readiness check,1
+Day 1,Identity and access,Take control of administrator credentials and change shared passwords,Security lead,Set up break-glass access to the target core systems,1
+Day 1,Identity and access,Confirm ownership of domains and cloud accounts,Acquirer IT lead,Agree who holds administrator credentials at completion,1
+Day 1,Security,Enforce MFA on administrator accounts and remote access,Security lead,Take control of administrator credentials and change shared passwords,1
+Day 1,Security,Start monitoring the target security alerts,Security lead,Agree minimum security conditions for connecting the target,1
+Day 1,Service and continuity,Copy backups to a location outside the target server room,Service desk lead,Take control of administrator credentials and change shared passwords,1
+Day 1,Service and continuity,Publish the support route and contact numbers,Service desk lead,Run a Day 1 readiness check,1
+Day 1,Governance and PMO,Freeze non-essential change on the target systems,Integration lead,Confirm the Day 1 requirements list with the target,1
+Day 1,People and communication,Send Day 1 messages to staff,Communications lead,Draft Day 1 messages for staff and customers and suppliers,1
+Days 2 to 30,Security,Close internet-facing exposures and patch critical systems,Security lead,Start monitoring the target security alerts,10
+Days 2 to 30,Security,Close leaver accounts and review privileged accounts,Security lead,Take control of administrator credentials and change shared passwords,14
+Days 2 to 30,Suppliers and licences,Decide renewals that fall due inside 100 days,Procurement lead,List contracts and licences that need consent on completion,10
+Days 2 to 30,Service and continuity,Set up a joint service desk queue and escalation route,Service desk lead,Publish the support route and contact numbers,10
+Days 2 to 30,Governance and PMO,Complete the asset and application and contract inventory,Acquirer IT lead,Freeze non-essential change on the target systems,14
+Days 2 to 30,Finance and cost,Start tracking one-off costs against the approved budget,Finance lead,Agree the one-off budget and approval route,14
+Days 2 to 30,Governance and PMO,Add the target risks to the group risk register,Integration lead,Turn diligence findings into a risk and cost log,14
+Days 2 to 30,People and communication,Hold a staff question and answer session on IT changes,Communications lead,Send Day 1 messages to staff,20
+Days 2 to 30,Service and continuity,Complete a restore test of the core system,Service desk lead,Copy backups to a location outside the target server room,21
+Days 2 to 30,Security,Enforce MFA for all users,Security lead,Enforce MFA on administrator accounts and remote access,21
+Days 2 to 30,Data and compliance,Take over the data protection records and incident log,Data protection lead,Complete the asset and application and contract inventory,21
+Days 2 to 30,People and communication,Agree cover and handover for the key IT person,HR lead,Agree retention approach for key IT staff with HR and legal,21
+Days 2 to 30,Security,Deploy endpoint protection and central management to all devices,Security lead,Close internet-facing exposures and patch critical systems,28
+Days 2 to 30,Applications and ERP,Document the ERP and firewall and backup configuration,Target IT lead,Agree cover and handover for the key IT person,30
+Days 2 to 30,Suppliers and licences,Check licence use against entitlement for the main vendors,Procurement lead,Complete the asset and application and contract inventory,30
+Days 2 to 30,Governance and PMO,Hold the 30 day steering group review,Integration lead,Complete the asset and application and contract inventory,30
+Days 31 to 60,Identity and access,Design the identity and email approach,Acquirer IT lead,Complete the asset and application and contract inventory,40
+Days 31 to 60,Network and infrastructure,Plan network connection and address renumbering,Network lead,Complete the asset and application and contract inventory,45
+Days 31 to 60,Service and continuity,Add a separate backup copy and run a second restore test,Service desk lead,Complete a restore test of the core system,45
+Days 31 to 60,Service and continuity,Agree service levels and a monthly service report,Service desk lead,Set up a joint service desk queue and escalation route,45
+Days 31 to 60,Security,Write and test a basic incident response plan,Security lead,Enforce MFA for all users,50
+Days 31 to 60,Applications and ERP,Produce the ERP and finance system options paper,Applications lead,Document the ERP and firewall and backup configuration,50
+Days 31 to 60,Suppliers and licences,Start consolidating productivity licences and telecoms,Procurement lead,Check licence use against entitlement for the main vendors,50
+Days 31 to 60,Network and infrastructure,Separate warehouse and machine systems from the office network,Network lead,Plan network connection and address renumbering,55
+Days 31 to 60,Finance and cost,Map chart of accounts and master data between the businesses,Finance lead,Complete the asset and application and contract inventory,55
+Days 31 to 60,Security,Complete the security certification assessment,Security lead,Deploy endpoint protection and central management to all devices,60
+Days 31 to 60,Identity and access,Pilot the identity connection with a small user group,Acquirer IT lead,Design the identity and email approach,60
+Days 31 to 60,Network and infrastructure,Connect the networks through a controlled and filtered link,Network lead,Plan network connection and address renumbering,60
+Days 31 to 60,Suppliers and licences,Move telephony off the seller related supplier,Network lead,Agree the transitional services schedule and exit dates,60
+Days 31 to 60,Finance and cost,Re-baseline savings and costs after 60 days,Finance lead,Start tracking one-off costs against the approved budget,60
+Days 31 to 60,Governance and PMO,Hold the 60 day steering group review,Integration lead,Hold the 30 day steering group review,60
+Days 61 to 100,Governance and PMO,Approve the ERP and finance system decision and funding,Integration lead,Produce the ERP and finance system options paper,70
+Days 61 to 100,Suppliers and licences,Review the transitional services exit plan,Procurement lead,Agree the transitional services schedule and exit dates,75
+Days 61 to 100,Identity and access,Roll out the identity connection to all staff,Acquirer IT lead,Pilot the identity connection with a small user group,80
+Days 61 to 100,Applications and ERP,Plan the ERP migration or upgrade with dates,Applications lead,Approve the ERP and finance system decision and funding,85
+Days 61 to 100,Network and infrastructure,Decommission unsupported servers and the old firewall,Network lead,Connect the networks through a controlled and filtered link,90
+Days 61 to 100,Identity and access,Rebrand domains and email addresses and certificates,Acquirer IT lead,Roll out the identity connection to all staff,90
+Days 61 to 100,Security,Apply the group security baseline to all target devices,Security lead,Complete the security certification assessment,90
+Days 61 to 100,Suppliers and licences,Move supplier contracts onto group terms where agreed,Procurement lead,Start consolidating productivity licences and telecoms,90
+Days 61 to 100,Data and compliance,Apply retention rules and clean up legacy data,Data protection lead,Take over the data protection records and incident log,95
+Days 61 to 100,Identity and access,Move email and file storage to the group tenant,Acquirer IT lead,Roll out the identity connection to all staff,95
+Days 61 to 100,Security,Run the first group access and security review for the target,Security lead,Apply the group security baseline to all target devices,100
+Days 61 to 100,Finance and cost,Measure realised savings and costs against the model,Finance lead,Re-baseline savings and costs after 60 days,100
+Days 61 to 100,Governance and PMO,Hold a lessons learned review with target staff,Integration lead,Hold the 60 day steering group review,100
+Days 61 to 100,Governance and PMO,Hand over to business as usual with a 12 month roadmap,Integration lead,Approve the ERP and finance system decision and funding,100

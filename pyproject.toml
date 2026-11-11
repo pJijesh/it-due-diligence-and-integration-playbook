@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "it-due-diligence-and-integration-playbook"
+dynamic = ["version"]
+description = "A practical playbook and a small standard-library scoring tool for IT due diligence on an acquisition target and the integration that follows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jijesh Puliyappottammal" }]
+keywords = ["due-diligence", "m-and-a", "it-integration", "risk-assessment", "synergy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/pJijesh/it-due-diligence-and-integration-playbook"
+
+[project.scripts]
+dd-playbook = "dd_playbook.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "dd_playbook.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["dd_playbook*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
