@@ -9,7 +9,7 @@ description = "A practical playbook and a small standard-library scoring tool fo
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Jijesh Puliyappottammal" }]
+authors = [{ name = "Puliyappottammal Jijesh" }]
 keywords = ["due-diligence", "m-and-a", "it-integration", "risk-assessment", "synergy"]
 classifiers = [
     "Programming Language :: Python :: 3",
